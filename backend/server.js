@@ -11,8 +11,6 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-const scraper = require("./scraper");
-
 app.get("/api/scrape", async (req, res) => {
   try {
     await scraper.scrapeChurchWebsite("https://upperroom.store");
@@ -23,11 +21,9 @@ app.get("/api/scrape", async (req, res) => {
 });
 
 // Connect to MongoDB
+console.log("Mongo URI:", process.env.MONGO_URI);
 mongoose
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log("MongoDB connected successfully");
   })
