@@ -28,6 +28,10 @@ app.get("/", (req, res) => {
   res.send("Welcome to ChurchMerch Backend");
 });
 
+const apparelRoutes = require("./routes/apparel");
+
+app.use("/api/apparel", apparelRoutes);
+
 // Start the Server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
