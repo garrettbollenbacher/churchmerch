@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
 const cheerio = require("cheerio");
-const ApparelItem = require("./models/ApparelItem");
-const Church = require("./models/church");
+const ApparelItem = require("./models/ApparelItems");
+const Church = require("./models/Church");
 
 async function scrapeChurchWebsite(url) {
   try {
@@ -39,7 +39,10 @@ async function scrapeChurchWebsite(url) {
     console.log("Scraping complete");
   } catch (error) {
     console.error("Error scraping website:", error);
+    throw error;
   }
 }
 
-scrapeChurchWebsite("https://examplechurch.com/apparel");
+scrapeChurchWebsite("https://upperroom.store");
+
+module.exports = { scrapeChurchWebsite };

@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
+const { scrapeChurchWebsite } = require("./scraper");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -14,7 +15,7 @@ const scraper = require("./scraper");
 
 app.get("/api/scrape", async (req, res) => {
   try {
-    await scraper.scrapeChurchWebsite("https://examplechurch.com/apparel");
+    await scraper.scrapeChurchWebsite("https://upperroom.store");
     res.status(200).send("Scraping initiated");
   } catch (err) {
     res.status(500).send("Error initiating scraper");

@@ -1,5 +1,5 @@
 const express = require("express");
-const ApparelItem = require("../models/ApparelItem");
+const ApparelItem = require("../models/ApparelItems");
 
 const router = express.Router();
 
