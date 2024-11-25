@@ -1,3 +1,62 @@
+// src/pages/HomePage.tsx
+import React from "react";
+import Header from "../components/Header";
+import ProductCard from "../components/ProductCard";
+
+const HomePage: React.FC = () => {
+  return (
+    <>
+      <Header />
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-4xl font-bold text-center mb-8">
+          Discover Church Apparel
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Placeholder Product Cards */}
+          <ProductCard
+            item={{
+              id: "",
+              name: "",
+              price: "",
+              imageURL: "",
+              linkToPurchase: "",
+            }}
+          />
+          <ProductCard
+            item={{
+              id: "",
+              name: "",
+              price: "",
+              imageURL: "",
+              linkToPurchase: "",
+            }}
+          />
+          <ProductCard
+            item={{
+              id: "",
+              name: "",
+              price: "",
+              imageURL: "",
+              linkToPurchase: "",
+            }}
+          />
+          <ProductCard
+            item={{
+              id: "",
+              name: "",
+              price: "",
+              imageURL: "",
+              linkToPurchase: "",
+            }}
+          />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default HomePage;
+
 // import React, { useEffect, useState } from "react";
 // import axios from "axios";
 // import ProductCard from "../components/ProductCard";
@@ -54,15 +113,15 @@
 
 // export default HomePage;
 
-import Header from "../components/Header";
+// import Header from "../components/Header";
 
-const HomePage: React.FC = () => {
-  return (
-    <>
-      <Header />
-      <div className="container">{/* Your HomePage content here */}</div>
-    </>
-  );
-};
+// const HomePage: React.FC = () => {
+//   return (
+//     <>
+//       <Header />
+//       <div className="container">{/* Your HomePage content here */}</div>
+//     </>
+//   );
+// };
 
-export default HomePage;
+// export default HomePage;
