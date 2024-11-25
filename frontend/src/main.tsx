@@ -7,11 +7,13 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/product/:id" element={<ProductPage />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/product/:id" element={<ProductPage />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   </React.StrictMode>
 );
