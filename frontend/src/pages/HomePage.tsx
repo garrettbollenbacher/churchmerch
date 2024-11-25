@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import ProductCard from "../components/ProductCard";
 import "../index.css";
+import "../App.css";
 
 const HomePage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -41,9 +42,6 @@ const HomePage: React.FC = () => {
       <Header />
       <div className="flex flex-col items-center justify-center">
         <div className="container mx-auto px-4 py-8 text-center">
-          <h1 className="text-5xl font-bold mb-8 text-gray-900">
-            church merch
-          </h1>
           <input
             type="text"
             value={searchTerm}
