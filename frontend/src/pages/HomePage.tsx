@@ -1,16 +1,9 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import ProductCard from "../components/ProductCard";
 import "../index.css";
 import "../App.css";
 
 const HomePage: React.FC = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-
-  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(e.target.value);
-  };
-
   const filteredProducts = [
     {
       id: "1",
@@ -33,36 +26,19 @@ const HomePage: React.FC = () => {
       imageURL: "https://via.placeholder.com/300",
       linkToPurchase: "https://examplechurch.com/store/love-cap",
     },
-  ].filter((product) =>
-    product.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  ];
 
   return (
-    <>
-      <div className="flex flex-col items-center justify-center min-h-screen w-full">
-        <div className="container max-w-4xl mx-auto px-4 py-8 text-center">
-          {/* <h1 className="text-5xl font-bold mb-8 text-gray-900">
-            Apparel For The Body of Christ
-          </h1> */}
-          <input
-            type="text"
-            value={searchTerm}
-            onChange={handleSearchChange}
-            placeholder="Search for apparel..."
-            className="mb-8 px-4 py-2 border border-gray-300 rounded-lg w-full max-w-lg text-lg"
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProducts.length > 0 ? (
-              filteredProducts.map((product) => (
-                <ProductCard key={product.id} item={product} />
-              ))
-            ) : (
-              <p className="text-lg text-gray-700">No products found</p>
-            )}
-          </div>
-        </div>
+    <div className="container mx-auto px-4 py-8">
+      {/* <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
+        Apparel For The Body of Christ
+      </h1> */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {filteredProducts.map((product) => (
+          <ProductCard key={product.id} item={product} />
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 
