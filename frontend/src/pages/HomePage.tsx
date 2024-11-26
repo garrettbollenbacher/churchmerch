@@ -40,8 +40,11 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Header />
-      <div className="flex flex-col items-center justify-center">
-        <div className="container mx-auto px-4 py-8 text-center">
+      <div className="flex flex-col items-center justify-center min-h-screen w-full bg-stained-glass bg-cover bg-center py-8">
+        <div className="container max-w-4xl mx-auto px-4 py-8 text-center">
+          <h1 className="text-5xl font-bold mb-8 text-gray-900">
+            church merch
+          </h1>
           <input
             type="text"
             value={searchTerm}
@@ -50,9 +53,13 @@ const HomePage: React.FC = () => {
             className="mb-8 px-4 py-2 border border-gray-300 rounded-lg w-full max-w-lg text-lg"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProducts.map((product) => (
-              <ProductCard key={product.id} item={product} />
-            ))}
+            {filteredProducts.length > 0 ? (
+              filteredProducts.map((product) => (
+                <ProductCard key={product.id} item={product} />
+              ))
+            ) : (
+              <p className="text-lg text-gray-700">No products found</p>
+            )}
           </div>
         </div>
       </div>
