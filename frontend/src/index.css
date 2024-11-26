@@ -30,6 +30,16 @@ a:hover {
   color: #2563eb; /* Slightly Darker Blue on Hover */
 }
 
+.title-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.title-link:hover {
+  color: var(--primary-color); /* Prevent color change on hover */
+}
+
 .header {
   padding: 1rem;
   background-color: #ffffff;
