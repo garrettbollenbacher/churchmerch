@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
+import Header from "../components/Header";
 import "../index.css";
 import "../App.css";
 
@@ -25,7 +25,6 @@ const HomePage: React.FC = () => {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        console.log("Fetched products:", data); // Add logging here
         setProducts(data);
       } catch (error) {
         console.error("Error fetching products:", error);
@@ -35,8 +34,8 @@ const HomePage: React.FC = () => {
     fetchProducts();
   }, []);
 
-  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(e.target.value);
+  const handleSearchChange = (search: string) => {
+    setSearchTerm(search);
   };
 
   const filteredProducts = products.filter((product) =>
@@ -45,19 +44,8 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <div className="w-full p-4 flex justify-between items-center fixed top-0 left-0 bg-white shadow-md">
-        <Link to="/" className="text-2xl font-bold text-gray-900 ml-4">
-          ChurchMerch
-        </Link>
-        <input
-          type="text"
-          value={searchTerm}
-          onChange={handleSearchChange}
-          placeholder="Search for apparel..."
-          className="px-4 py-2 border border-gray-300 rounded-lg text-lg mr-4"
-        />
-      </div>
-      <div className="flex flex-col items-center justify-center min-h-screen w-full mt-20">
+      <Header onSearch={handleSearchChange} />
+      <div className="flex flex-col items-center justify-center min-h-screen w-full mt-32">
         <div className="container max-w-4xl mx-auto px-4 py-8 text-center">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProducts.length > 0 ? (
