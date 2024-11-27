@@ -15,36 +15,19 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
   };
 
   return (
-    <nav className="w-full bg-gray-900 p-4 shadow-md flex items-center justify-between">
-      <div className="flex items-center space-x-4">
-        <Link
-          to="/"
-          className="text-5xl font-bold text-white title-link flex items-center"
-        >
-          <span>church</span>
-          {/* <img
-            src="/churchmerch-cross.png"
-            alt="Cross"
-            className="mx-2 h-6 w-6"
-          /> */}
-          <span>merch</span>
+    <nav className="w-full bg-white p-6 shadow-lg fixed top-0 left-0 z-50 flex items-center justify-between">
+      <div className="flex items-center space-x-8">
+        <Link to="/" className="text-4xl font-bold text-gray-900 title-link">
+          ChurchMerch
         </Link>
         <input
           type="text"
-          placeholder="Search..."
+          placeholder="Search for apparel..."
           value={searchTerm}
           onChange={handleSearchChange}
-          className="p-2 rounded ml-4"
+          className="p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
-      {/* <div className="flex space-x-4">
-        <Link to="/" className="text-white hover:text-gray-300">
-          Home
-        </Link>
-        <Link to="/contact" className="text-white hover:text-gray-300">
-          Contact
-        </Link>
-      </div> */}
     </nav>
   );
 };
