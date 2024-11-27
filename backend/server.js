@@ -5,6 +5,9 @@ const path = require("path");
 const app = express();
 const PORT = 5000;
 
+const cors = require("cors");
+app.use(cors());
+
 // Endpoint to serve the scraped products
 app.get("/api/products", (req, res) => {
   fs.readFile(

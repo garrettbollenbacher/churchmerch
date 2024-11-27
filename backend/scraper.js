@@ -19,11 +19,17 @@ const scrapeMerchandise = async () => {
     $("li.grid__item").each((index, element) => {
       const product = {};
 
+      // Assign a unique id to each product
+      product.id = `product-${index + 1}`;
+
       // Extract product name and link
       const heading = $(element).find("h3.card__heading");
       const productLink = heading.find("a");
       if (productLink.length) {
-        product.name = productLink.text().trim();
+        product.name = productLink
+          .text()
+          .replace(/\s{2,}/g, " ")
+          .trim();
         product.link = "https://jesusimage.store" + productLink.attr("href");
       }
 
@@ -34,9 +40,11 @@ const scrapeMerchandise = async () => {
       }
 
       // Extract product image
-      const imgTag = $(element).find("img.motion-reduce");
+      const imgTag = $(element).find("img");
       if (imgTag.length) {
-        product.image = "https:" + imgTag.attr("src");
+        product.image =
+          "https:" +
+          (imgTag.attr("src") || imgTag.attr("srcset").split(" ")[0]);
       }
 
       if (Object.keys(product).length > 0) {
