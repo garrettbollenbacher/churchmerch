@@ -1,21 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import ProductPage from "./pages/ProductPage";
+import Header from "./components/Header";
 import "./index.css";
+
+// Main App Component
+const App: React.FC = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearchChange = (search: string) => {
+    setSearchTerm(search);
+  };
+
+  return (
+    <>
+      <Header onSearch={handleSearchChange} />
+      <div className="min-h-screen bg-gray-100 pt-24">
+        <Routes>
+          <Route path="/" element={<HomePage searchTerm={searchTerm} />} />
+        </Routes>
+      </div>
+    </>
+  );
+};
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-100">
-        <div className="flex flex-col items-center justify-center mt-20">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/product/:id" element={<ProductPage />} />
-          </Routes>
-        </div>
-      </div>
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );

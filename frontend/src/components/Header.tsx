@@ -11,11 +11,11 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value);
-    onSearch(e.target.value);
+    onSearch(e.target.value); // Call the parent's onSearch function
   };
 
   return (
-    <nav className="w-full bg-white p-6 shadow-lg fixed top-0 left-0 z-50 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 w-full bg-white p-6 shadow-md z-50 flex items-center justify-between">
       <div className="flex items-center space-x-8">
         <Link to="/" className="text-4xl font-bold text-gray-900 title-link">
           ChurchMerch

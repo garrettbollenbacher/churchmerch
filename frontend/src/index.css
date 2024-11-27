@@ -1,7 +1,9 @@
+/* Tailwind Base Setup */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom CSS Variables and General Styles */
 :root {
   --primary-color: #1f2937; /* Dark Gray for Text */
   --secondary-color: #3b82f6; /* Blue for Interactive Elements */
@@ -19,44 +21,52 @@ body {
   color: var(--primary-color);
 }
 
+/* Link Styling */
 a {
   font-weight: 600;
   color: var(--secondary-color);
   text-decoration: none;
   transition: color 0.3s;
 }
-
 a:hover {
   color: #2563eb; /* Slightly Darker Blue on Hover */
 }
 
-.title-link {
-  text-decoration: none;
-  color: var(--primary-color);
-  font-weight: bold;
+/* Header/Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 50;
 }
 
-.title-link:hover {
+.navbar a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar a:hover {
   color: var(--primary-color); /* Prevent color change on hover */
 }
 
-.header {
-  padding: 1rem;
-  background-color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.header a {
-  font-size: 1.2rem;
-}
-
-.header input[type="text"] {
+.navbar input[type="text"] {
   padding: 0.5rem;
   border-radius: 0.25rem;
-  border: 1px solid #ccc;
-  margin-left: 1rem;
+  border: 1px solid var(--accent-color);
+  margin-left: 1.5rem;
+  transition: box-shadow 0.2s;
+}
+.navbar input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.5); /* Blue shadow for focus */
 }
 
+/* Button Styling */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -74,20 +84,12 @@ button:hover {
   background-color: #2563eb;
   transform: translateY(-3px);
 }
-
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.container {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
+/* Product Card Styling */
 .product-card {
   background-color: #ffffff;
   border: 1px solid var(--accent-color);
@@ -95,7 +97,7 @@ button:focus-visible {
   padding: 1rem;
   margin: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
 }
 
 .product-card:hover {
@@ -133,4 +135,32 @@ button:focus-visible {
 .product-card a:hover {
   background-color: #1e40af;
   transform: translateY(-2px);
+}
+
+/* General Container Styling */
+.container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Root Container for General Layout */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: var(--font-family);
+  color: var(--primary-color);
+}
+
+/* Miscellaneous */
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
 }
