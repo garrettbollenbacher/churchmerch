@@ -1,48 +1,61 @@
-const puppeteer = require("puppeteer");
+const axios = require("axios");
 const cheerio = require("cheerio");
-const ApparelItem = require("./models/ApparelItems");
-const Church = require("./models/Church");
+const fs = require("fs");
 
-async function scrapeChurchWebsite(url) {
+const scrapeMerchandise = async () => {
   try {
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
-    await page.goto(url, { waitUntil: "domcontentloaded" });
-
-    const content = await page.content();
-    const $ = cheerio.load(content);
-
-    // Example scraping logic
-    const apparelItems = [];
-    $(".apparel-item").each((index, element) => {
-      const name = $(element).find(".item-name").text();
-      const price = $(element).find(".item-price").text();
-      const imageURL = $(element).find("img").attr("src");
-      const linkToPurchase = $(element).find("a").attr("href");
-
-      apparelItems.push({ name, price, imageURL, linkToPurchase });
+    const url = "https://jesusimage.store/collections/all";
+    const response = await axios.get(url, {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36",
+      },
     });
 
-    // Save apparel items to the database
-    for (let item of apparelItems) {
-      const newItem = new ApparelItem({
-        name: item.name,
-        price: item.price,
-        imageURL: item.imageURL,
-        linkToPurchase: item.linkToPurchase,
-        churchId: "some-church-id", // Replace with actual church ID
-      });
-      await newItem.save();
-    }
+    const html = response.data;
+    const $ = cheerio.load(html);
+    const products = [];
 
-    await browser.close();
-    console.log("Scraping complete");
+    $("li.grid__item").each((index, element) => {
+      const product = {};
+
+      // Extract product name and link
+      const heading = $(element).find("h3.card__heading");
+      const productLink = heading.find("a");
+      if (productLink.length) {
+        product.name = productLink.text().trim();
+        product.link = "https://jesusimage.store" + productLink.attr("href");
+      }
+
+      // Extract product price
+      const priceTag = $(element).find("span.price-item--regular");
+      if (priceTag.length) {
+        product.price = priceTag.text().trim();
+      }
+
+      // Extract product image
+      const imgTag = $(element).find("img.motion-reduce");
+      if (imgTag.length) {
+        product.image = "https:" + imgTag.attr("src");
+      }
+
+      if (Object.keys(product).length > 0) {
+        products.push(product);
+      }
+    });
+
+    // Save scraped data to a JSON file
+    fs.writeFileSync(
+      "scraped_products.json",
+      JSON.stringify(products, null, 2),
+      "utf-8"
+    );
+    console.log(
+      "Scraping completed successfully. Data saved to scraped_products.json"
+    );
   } catch (error) {
-    console.error("Error scraping website:", error);
-    throw error;
+    console.error("Error scraping merchandise:", error);
   }
-}
+};
 
-scrapeChurchWebsite("https://upperroom.store");
-
-module.exports = { scrapeChurchWebsite };
+scrapeMerchandise();

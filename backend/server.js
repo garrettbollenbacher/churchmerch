@@ -1,46 +1,27 @@
 const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-require("dotenv").config();
-const { scrapeChurchWebsite } = require("./scraper");
+const fs = require("fs");
+const path = require("path");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
-// Middleware
-app.use(cors());
-app.use(express.json());
-
-app.get("/api/scrape", async (req, res) => {
-  try {
-    await scraper.scrapeChurchWebsite("https://upperroom.store");
-    res.status(200).send("Scraping initiated");
-  } catch (err) {
-    res.status(500).send("Error initiating scraper");
-  }
+// Endpoint to serve the scraped products
+app.get("/api/products", (req, res) => {
+  fs.readFile(
+    path.join(__dirname, "scraped_products.json"),
+    "utf8",
+    (err, data) => {
+      if (err) {
+        res.status(500).json({ error: "Unable to read product data" });
+      } else {
+        const products = JSON.parse(data);
+        res.json(products);
+      }
+    }
+  );
 });
 
-// Connect to MongoDB
-console.log("Mongo URI:", process.env.MONGO_URI);
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => {
-    console.log("MongoDB connected successfully");
-  })
-  .catch((err) => {
-    console.error("MongoDB connection error:", err);
-  });
-
-// Sample Route
-app.get("/", (req, res) => {
-  res.send("Welcome to ChurchMerch Backend");
-});
-
-const apparelRoutes = require("./routes/apparel");
-
-app.use("/api/apparel", apparelRoutes);
-
-// Start the Server
+// Start the server
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
