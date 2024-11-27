@@ -1,142 +1,122 @@
 [
   {
-    "id": "product-1",
-    "name": "Angus Dei Lamb Pin Angus Dei Lamb Pin",
+    "name": "Angus Dei Lamb Pin",
     "link": "https://jesusimage.store/products/angus-dei-lamb-pin",
     "price": "$5.00",
     "image": "https://jesusimage.store/cdn/shop/files/LambPin.png?v=1723494368&width=533"
   },
   {
-    "id": "product-2",
-    "name": "Christ & Him Crucified Long Sleeve Christ & Him Crucified Long Sleeve",
+    "name": "Christ & Him Crucified Long Sleeve",
     "link": "https://jesusimage.store/products/christ-him-crucified-ls",
     "price": "$20.00",
     "image": "https://jesusimage.store/cdn/shop/files/J22_ChristCrucifiedLuke23BACK_PS-ComfortColors-6014-B4.jpg?v=1712774112&width=533"
   },
   {
-    "id": "product-3",
-    "name": "Christ Has Overcome Hoodie Christ Has Overcome Hoodie",
+    "name": "Christ Has Overcome Hoodie",
     "link": "https://jesusimage.store/products/christ-has-overcome-hoodie",
     "price": "$65.00",
     "image": "https://jesusimage.store/cdn/shop/files/Overcome2.png?v=1723493978&width=533"
   },
   {
-    "id": "product-4",
-    "name": "Christ is Risen Book Christ is Risen Book",
+    "name": "Christ is Risen Book",
     "link": "https://jesusimage.store/products/christ-is-risen-book",
     "price": "$15.00",
     "image": "https://jesusimage.store/cdn/shop/files/ChristisRisen_Front.png?v=1713389927&width=533"
   },
   {
-    "id": "product-5",
-    "name": "Come Lord Jesus Band Tee Come Lord Jesus Band Tee",
+    "name": "Come Lord Jesus Band Tee",
     "link": "https://jesusimage.store/products/come-lord-jesus-band-tee",
     "price": "$35.00",
     "image": "https://jesusimage.store/cdn/shop/files/J22_CLJBandTeeFRONT_PS-ComfortColors-1717-F1.jpg?v=1712774058&width=533"
   },
   {
-    "id": "product-6",
-    "name": "Crown of Thorns Tee Crown of Thorns Tee",
+    "name": "Cross T-Shirt — Kids",
+    "link": "https://jesusimage.store/products/cross-t-shirt-kids",
+    "price": "$20.00",
+    "image": "https://jesusimage.store/cdn/shop/files/Screen-Shot-2020-02-05-at-1.45.03-PM.webp?v=1712781088&width=533"
+  },
+  {
+    "name": "Crown of Thorns Tee",
     "link": "https://jesusimage.store/products/crown-of-thorns-tee",
     "price": "$35.00",
     "image": "https://jesusimage.store/cdn/shop/files/Crown1.png?v=1723495420&width=533"
   },
   {
-    "id": "product-7",
-    "name": "Everything Hat Everything Hat",
+    "name": "Everything Hat",
     "link": "https://jesusimage.store/products/holy-spirit-hat-copy",
     "price": "$25.00",
     "image": "https://jesusimage.store/cdn/shop/files/Everythinghat1.png?v=1723495296&width=533"
   },
   {
-    "id": "product-8",
-    "name": "Fully God Fully Man Tee Fully God Fully Man Tee",
+    "name": "Fully God Fully Man Tee",
     "link": "https://jesusimage.store/products/fully-god-fully-man-tee",
     "price": "$35.00",
     "image": "https://jesusimage.store/cdn/shop/files/FullGodFullyManTee-Front.png?v=1716321073&width=533"
   },
   {
-    "id": "product-9",
-    "name": "Healing Presence Book Healing Presence Book",
+    "name": "Healing Presence Book",
     "link": "https://jesusimage.store/products/healing-presence-book",
     "price": "$15.00",
     "image": "https://jesusimage.store/cdn/shop/files/HealingPresence_Front.png?v=1713389942&width=533"
   },
   {
-    "id": "product-10",
-    "name": "Holy Spirit Book Holy Spirit Book",
+    "name": "Holy Spirit Book",
     "link": "https://jesusimage.store/products/holy-spirit-book",
     "price": "$15.00",
     "image": "https://jesusimage.store/cdn/shop/files/HS_Front.png?v=1713389954&width=533"
   },
   {
-    "id": "product-11",
-    "name": "Holy Spirit Hat Holy Spirit Hat",
+    "name": "Holy Spirit Hat",
     "link": "https://jesusimage.store/products/holy-spirit-hat",
     "price": "$25.00",
     "image": "https://jesusimage.store/cdn/shop/files/HSHat1.png?v=1723494934&width=533"
   },
   {
-    "id": "product-12",
-    "name": "Jesus 365 Book Jesus 365 Book",
+    "name": "Jesus 365 Book",
     "link": "https://jesusimage.store/products/jesus-365-book",
     "price": "$15.00",
     "image": "https://jesusimage.store/cdn/shop/files/365_Front.png?v=1713389969&width=533"
   },
   {
-    "id": "product-13",
-    "name": "Jesus Heals All Tee Jesus Heals All Tee",
+    "name": "Jesus Heals All Tee",
     "link": "https://jesusimage.store/products/jesus-heals-all-tee",
     "price": "$35.00",
     "image": "https://jesusimage.store/cdn/shop/files/HealsAll1.png?v=1723495177&width=533"
   },
   {
-    "id": "product-14",
-    "name": "Jesus Image Basics Tee - Patchouli Jesus Image Basics Tee - Patchouli",
+    "name": "Jesus Image Basics Tee - Patchouli",
     "link": "https://jesusimage.store/products/jesus-image-basics-tee-patchouli",
     "price": "$35.00",
     "image": "https://jesusimage.store/cdn/shop/files/Screenshot2024-09-19at2.29.58PM.png?v=1726770607&width=533"
   },
   {
-    "id": "product-15",
-    "name": "Jesus Image Crewneck Jesus Image Crewneck",
+    "name": "Jesus Image Crewneck",
     "link": "https://jesusimage.store/products/jesus-image-crewneck",
     "price": "$50.00",
     "image": "https://jesusimage.store/cdn/shop/files/JesusImageCrewneck.jpg?v=1716480002&width=533"
   },
   {
-    "id": "product-16",
-    "name": "Jesus Image Tee Jesus Image Tee",
+    "name": "Jesus Image Tee",
     "link": "https://jesusimage.store/products/jesus-image-tee",
     "price": "$35.00",
     "image": "https://jesusimage.store/cdn/shop/files/JesusImageTee.jpg?v=1716479896&width=533"
   },
   {
-    "id": "product-17",
-    "name": "Jesus Image Woven Patch Beanie Jesus Image Woven Patch Beanie",
+    "name": "Jesus Image Woven Patch Beanie",
     "link": "https://jesusimage.store/products/christ-has-overcome-hat-copy",
     "price": "$25.00",
     "image": "https://jesusimage.store/cdn/shop/files/JIFishermenBeanie1.png?v=1723494608&width=533"
   },
   {
-    "id": "product-18",
-    "name": "Jesus Nights | Dallas, TX | Michael Koulianos Jesus Nights | Dallas, TX | Michael Koulianos",
+    "name": "Jesus Nights | Dallas, TX | Michael Koulianos",
     "link": "https://jesusimage.store/products/jesus-nights-dallas",
     "price": "$0.00",
     "image": "https://jesusimage.store/cdn/shop/files/JesusNightsDallasImage.jpg?v=1716479500&width=533"
   },
   {
-    "id": "product-19",
-    "name": "Jesus People Hoodie Jesus People Hoodie",
+    "name": "Jesus People Hoodie",
     "link": "https://jesusimage.store/products/jesus-people-hoodie",
     "price": "$65.00",
     "image": "https://jesusimage.store/cdn/shop/files/JPnew2.png?v=1723494503&width=533"
-  },
-  {
-    "id": "product-20",
-    "name": "Not My Will Tee Not My Will Tee",
-    "link": "https://jesusimage.store/products/not-my-will-tee",
-    "price": "$35.00",
-    "image": "https://jesusimage.store/cdn/shop/files/NotmyWill2.png?v=1723492344&width=533"
   }
 ]

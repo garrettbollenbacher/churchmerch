@@ -19,18 +19,18 @@ const scrapeMerchandise = async () => {
     $("li.grid__item").each((index, element) => {
       const product = {};
 
-      // Assign a unique id to each product
-      product.id = `product-${index + 1}`;
-
       // Extract product name and link
       const heading = $(element).find("h3.card__heading");
       const productLink = heading.find("a");
       if (productLink.length) {
-        product.name = productLink
+        const nameText = productLink
           .text()
-          .replace(/\s{2,}/g, " ")
-          .trim();
+          .split("\n")
+          .map((text) => text.trim())
+          .filter((text) => text.length > 0);
+        product.name = nameText[0];
         product.link = "https://jesusimage.store" + productLink.attr("href");
+        console.log("Raw Product Name:", productLink.text().trim());
       }
 
       // Extract product price
@@ -40,11 +40,15 @@ const scrapeMerchandise = async () => {
       }
 
       // Extract product image
+      // Extract product image
       const imgTag = $(element).find("img");
       if (imgTag.length) {
-        product.image =
-          "https:" +
-          (imgTag.attr("src") || imgTag.attr("srcset").split(" ")[0]);
+        if (imgTag.attr("src")) {
+          product.image = "https:" + imgTag.attr("src");
+        } else if (imgTag.attr("srcset")) {
+          const srcset = imgTag.attr("srcset").split(",");
+          product.image = "https:" + srcset[0].split(" ")[0].trim(); // Extract the first URL from srcset
+        }
       }
 
       if (Object.keys(product).length > 0) {
