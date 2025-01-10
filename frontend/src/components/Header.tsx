@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
     <nav className="fixed top-0 left-0 w-full bg-white p-6 shadow-md z-50 flex items-center justify-between">
       <div className="flex items-center space-x-8">
         <Link to="/" className="text-4xl font-bold text-gray-900 title-link">
-          ChurchMerch
+          churchmerch
         </Link>
         <input
           type="text"

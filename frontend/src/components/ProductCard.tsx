@@ -1,37 +1,35 @@
-import React from "react";
-import "../index.css";
+import Image from "next/image";
+import Link from "next/link";
+import { Product } from "../types/Product";
 
 interface ProductCardProps {
-  item: {
-    id: string;
-    name: string;
-    price: string;
-    image: string;
-    link: string;
-  };
+  product: Product;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ item }) => {
+export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
-    <div className="max-w-sm rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl bg-white">
-      <a
-        href={item.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block hover:opacity-90 transition-opacity duration-300"
-      >
-        <img
-          className="w-full h-64 object-cover"
-          src={item.image}
-          alt={item.name}
-        />
-      </a>
-      <div className="px-6 py-4">
-        <h3 className="font-bold text-xl mb-2 text-gray-800">{item.name}</h3>
-        <p className="text-gray-700 text-lg mb-4">{item.price}</p>
+    <Link href={product.churchUrl} passHref>
+      <div className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+        <div className="relative w-full h-64">
+          <Image
+            src={product.imageUrl}
+            alt={product.name}
+            layout="fill"
+            objectFit="cover"
+            className="group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div className="p-4">
+          <h2 className="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors">
+            {product.name}
+          </h2>
+          <p className="text-gray-600 mb-2">
+            {product.category.charAt(0).toUpperCase() +
+              product.category.slice(1)}
+          </p>
+          <p className="text-blue-600 font-bold">${product.price.toFixed(2)}</p>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
-
-export default ProductCard;
