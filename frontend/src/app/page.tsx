@@ -1,66 +1,34 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useEffect } from "react";
 import { Product } from "../types/Product";
 import { ProductCard } from "../components/ProductCard";
 import { Navbar } from "../components/Navbar";
 import { SearchBar } from "../components/SearchBar";
 import { CategoryTabs } from "../components/CategoryTabs";
 
-const sampleProducts: Product[] = [
-  {
-    id: "1",
-    name: "First Baptist T-Shirt",
-    price: 19.99,
-    imageUrl: "/placeholder.svg?height=400&width=400",
-    churchUrl: "https://www.firstbaptist.com",
-    category: "t-shirts",
-  },
-  {
-    id: "2",
-    name: "St. Mary's Hoodie",
-    price: 34.99,
-    imageUrl: "/placeholder.svg?height=400&width=400",
-    churchUrl: "https://www.stmarys.com",
-    category: "hoodies",
-  },
-  {
-    id: "3",
-    name: "Grace Community Cap",
-    price: 14.99,
-    imageUrl: "/placeholder.svg?height=400&width=400",
-    churchUrl: "https://www.gracecommunity.com",
-    category: "caps",
-  },
-  {
-    id: "4",
-    name: "Hope Church Sweatshirt",
-    price: 29.99,
-    imageUrl: "/placeholder.svg?height=400&width=400",
-    churchUrl: "https://www.hopechurch.com",
-    category: "hoodies",
-  },
-  {
-    id: "5",
-    name: "Trinity Lutheran Polo",
-    price: 24.99,
-    imageUrl: "/placeholder.svg?height=400&width=400",
-    churchUrl: "https://www.trinitylutheranchurch.com",
-    category: "t-shirts",
-  },
-];
-
-const categories = ["t-shirts", "hoodies", "caps"];
-
 export default function Home() {
+  const [products, setProducts] = useState<Product[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
-  //const [selectedCategory, setSelectedCategory] = useState('')
 
-  const filteredProducts = useMemo(() => {
-    return sampleProducts.filter((product) => {
-      return product.name.toLowerCase().includes(searchQuery.toLowerCase());
-    });
-  }, [searchQuery]);
+  useEffect(() => {
+    // Fetch the products from the backend
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/api/products");
+        const data = await response.json();
+        setProducts(data);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -70,7 +38,7 @@ export default function Home() {
           <SearchBar onSearch={setSearchQuery} />
         </div>
         <CategoryTabs
-          categories={categories}
+          categories={["t-shirts", "hoodies", "caps"]}
           selectedCategory=""
           onSelectCategory={(category) => setSearchQuery(category)}
         />

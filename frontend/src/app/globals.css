@@ -1,8 +1,8 @@
-/* Tailwind Base Setup */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Ensure Poppins is applied globally */
 body {
   font-family: "Poppins", sans-serif;
 }
