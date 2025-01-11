@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Home, ShoppingBag } from "lucide-react";
+import { Home } from "lucide-react";
 
 export const Navbar: React.FC = () => {
   return (

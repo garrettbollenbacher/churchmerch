@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../index.css";
+import "../globals.css";
 
 interface HeaderProps {
   onSearch: (searchTerm: string) => void;
