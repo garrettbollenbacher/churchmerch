@@ -105,17 +105,10 @@ const scrapeJesusImage = async () => {
       }
     });
 
-    // Save scraped data to a JSON file
-    fs.writeFileSync(
-      "scraped_products.json",
-      JSON.stringify(products, null, 2),
-      "utf-8"
-    );
-    console.log(
-      "Scraping completed successfully. Data saved to scraped_products.json"
-    );
+    return products;
   } catch (error) {
     console.error("Error scraping merchandise:", error);
+    return [];
   }
 };
 
