@@ -1,4 +1,102 @@
-[
+module.exports = [
+  {
+    "name": "MORNING, NOON, & NIGHT BOTTLE\n              \n              MORNING, NOON, & NIGHT BOTTLE",
+    "churchUrl": "https://upperroom.store/products/mnn-bottle",
+    "price": "$22.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/wtaerbottle_essentials_FLAT.png?v=1726077287&width=533",
+    "category": "Upper Room"
+  },
+  {
+    "name": "THE CLASSIC TOTE\n              \n              THE CLASSIC TOTE",
+    "churchUrl": "https://upperroom.store/products/classic-tote",
+    "price": "$36.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/Tote_essentials_FLAT.png?v=1726080970&width=533",
+    "category": "Upper Room"
+  },
+  {
+    "name": "UNCONSTRUCTED HAT\n              \n              UNCONSTRUCTED HAT",
+    "churchUrl": "https://upperroom.store/products/unconstructed-hat",
+    "price": "$33.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/UPRMhat_essentials_FLAT.png?v=1726079776&width=533",
+    "category": "Upper Room"
+  },
+  {
+    "name": "DISTRESSED DAD HAT\n              \n              DISTRESSED DAD HAT",
+    "churchUrl": "https://upperroom.store/products/distressed-dad-hat",
+    "price": "$33.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/BlackHat_essentials_FLAT.png?v=1726082024&width=533",
+    "category": "Upper Room"
+  },
+  {
+    "name": "MORNING, NOON, & NIGHT KIDS TEE\n              \n              MORNING, NOON, & NIGHT KIDS TEE",
+    "churchUrl": "https://upperroom.store/products/mnn-kids-tee",
+    "price": "$16.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/MNNKidsTee_essentials_FLAT.png?v=1726079203&width=533",
+    "category": "Upper Room"
+  },
+  {
+    "name": "UPPERROOM CLASSIC TEE: BLACK\n              \n              UPPERROOM CLASSIC TEE: BLACK",
+    "churchUrl": "https://upperroom.store/products/upperroom-classic-tee-white-copy",
+    "price": "$38.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/BlackEmbroidered_essentials_FLAT.png?v=1726079535&width=533",
+    "category": "Upper Room"
+  },
+  {
+    "name": "UPPERROOM CLASSIC TEE: WHITE\n              \n              UPPERROOM CLASSIC TEE: WHITE",
+    "churchUrl": "https://upperroom.store/products/box-logo-short-tee-off-white-x-clear-blue",
+    "price": "$38.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/WhiteEmbroidered_essentials_FLAT.png?v=1726079399&width=533",
+    "category": "Upper Room"
+  },
+  {
+    "name": "MORNING, NOON, & NIGHT CREWNECK\n              \n              MORNING, NOON, & NIGHT CREWNECK",
+    "churchUrl": "https://upperroom.store/products/mnn-crewneck",
+    "price": "$55.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/Crewneck_essentials_FLAT.png?v=1726080132&width=533",
+    "category": "Upper Room"
+  },
+  {
+    "name": "UPPERROOM HOODIE: BLACK\n              \n              UPPERROOM HOODIE: BLACK",
+    "churchUrl": "https://upperroom.store/products/upperroom-hoodie-black-2",
+    "price": "$65.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/BlackHoodie_essentials_FLAT.png?v=1726081846&width=533",
+    "category": "Upper Room"
+  },
+  {
+    "name": "UPPERROOM HOODIE: RED\n              \n              UPPERROOM HOODIE: RED",
+    "churchUrl": "https://upperroom.store/products/upperroom-hoodie",
+    "price": "$65.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/RedHoodie_essentials_FLAT.png?v=1726080735&width=533",
+    "category": "Upper Room"
+  },
+  {
+    "name": "*UPPERROOM* HOODIE\n              \n              *UPPERROOM* HOODIE",
+    "churchUrl": "https://upperroom.store/products/upperroom-hoodie-cement",
+    "price": "$65.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/Cement_Hoodie_Square.png?v=1731699633&width=533",
+    "category": "Upper Room"
+  },
+  {
+    "name": "His House, His Presence\n              \n              His House, His Presence",
+    "churchUrl": "https://upperroom.store/products/his-house-his-presence",
+    "price": "$19.99 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/HisHouse_HisPresence-front.jpg?v=1690930996&width=533",
+    "category": "Upper Room"
+  },
+  {
+    "name": "BIG JESUS\n              \n              BIG JESUS",
+    "churchUrl": "https://upperroom.store/products/big-jesus",
+    "price": "$17.99 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/BIGJESUS-front.jpg?v=1690930506&width=533",
+    "category": "Upper Room"
+  },
+  {
+    "name": "Su Casa, Su Presencia\n              \n              Su Casa, Su Presencia",
+    "churchUrl": "https://upperroom.store/products/su-casa-su-presencia",
+    "price": "$19.99 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/IMG_5821.jpg?v=1709852263&width=533",
+    "category": "Upper Room"
+  },
   {
     "name": "Angus Dei Lamb Pin",
     "churchUrl": "https://jesusimage.store/products/angus-dei-lamb-pin",
@@ -139,4 +237,4 @@
     "imageUrl": "https://jesusimage.store/cdn/shop/files/JS25CrewFront.png?v=1724772696&width=533",
     "category": "uncategorized"
   }
-]
+];
