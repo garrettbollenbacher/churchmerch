@@ -1,6 +1,7 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 const fs = require("fs");
+const path = require("path");
 
 const scrapeElevationChurch = async () => {
   try {
@@ -22,7 +23,8 @@ const scrapeElevationChurch = async () => {
       const productLink = $(element).find("a.product-grid-item__title");
       if (productLink.length) {
         product.name = productLink.text().trim();
-        product.churchUrl = url + productLink.attr("href");
+        product.churchUrl =
+          "https://store.elevationchurch.org" + productLink.attr("href");
       }
 
       const priceTag = $(element).find("a.product-grid-item__price");
@@ -32,12 +34,11 @@ const scrapeElevationChurch = async () => {
 
       const imgTag = $(element).find(".product-grid-item__image img");
       if (imgTag.length) {
-        product.imageUrl = imgTag.attr("src")?.startsWith("//")
-          ? "https:" + imgTag.attr("src")
-          : imgTag.attr("src");
+        const src = imgTag.attr("src");
+        product.imageUrl = src.startsWith("//") ? "https:" + src : src;
       }
 
-      product.category = "Elevation Church";
+      product.churchName = "ELEVATION CHURCH";
 
       if (Object.keys(product).length > 0) {
         products.push(product);
@@ -85,6 +86,8 @@ const scrapeUpperRoom = async () => {
         const src = imgTag.attr("src");
         product.imageUrl = src.startsWith("//") ? "https:" + src : src;
       }
+
+      product.churchName = "UPPERROOM";
 
       if (Object.keys(product).length > 0) {
         products.push(product);
@@ -141,7 +144,8 @@ const scrapeJesusImage = async () => {
         }
       }
       // Set default category if not present
-      product.category = product.category || "uncategorized";
+      product.churchName = "JESUS IMAGE";
+
       if (Object.keys(product).length > 0) {
         products.push(product);
       }
@@ -165,10 +169,11 @@ const scrapeAll = async () => {
   ];
 
   fs.writeFileSync(
-    "scraped_products.json",
-    JSON.stringify(allProducts, null, 3),
+    path.join(__dirname, "scraped_products.json"),
+    JSON.stringify(allProducts, null, 2),
     "utf-8"
   );
+
   console.log("Scraping completed. Data saved to scraped_products.json");
 };
 

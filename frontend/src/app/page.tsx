@@ -10,6 +10,7 @@ import { CategoryTabs } from "../components/CategoryTabs";
 export default function Home() {
   const [products, setProducts] = useState<Product[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedChurch, setSelectedChurch] = useState("");
 
   useEffect(() => {
     // Fetch the products from the backend
@@ -26,12 +27,21 @@ export default function Home() {
     fetchProducts();
   }, []);
 
-  // Ensure products is an array before calling filter
-  const filteredProducts = Array.isArray(products)
-    ? products.filter((product) =>
-        product.name.toLowerCase().includes(searchQuery.toLowerCase())
-      )
-    : [];
+  // Get unique church names
+  const churchNames = Array.from(
+    new Set(products.map((product) => product.churchName))
+  );
+
+  // Filter products by search query and selected church
+  const filteredProducts = products.filter((product) => {
+    const matchesSearchQuery = product.name
+      .toLowerCase()
+      .includes(searchQuery.toLowerCase());
+    const matchesChurch = selectedChurch
+      ? product.churchName === selectedChurch
+      : true;
+    return matchesSearchQuery && matchesChurch;
+  });
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -41,9 +51,9 @@ export default function Home() {
           <SearchBar onSearch={setSearchQuery} />
         </div>
         <CategoryTabs
-          categories={["t-shirts", "hoodies", "caps"]}
-          selectedCategory=""
-          onSelectCategory={(category) => setSearchQuery(category)}
+          categories={churchNames}
+          selectedCategory={selectedChurch}
+          onSelectCategory={setSelectedChurch}
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-8">
           {filteredProducts.map((product) => (
