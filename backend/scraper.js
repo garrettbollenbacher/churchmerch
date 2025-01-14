@@ -16,23 +16,25 @@ const scrapeUpperRoom = async () => {
     const $ = cheerio.load(html);
     const products = [];
 
-      $("div.ProductItem").each((_, element) => {
+      $("div.product-item").each((_, element) => {
       const product = {};
       
-      const productLink = $(element).find("a.ProductItem__Title");
+      const productLink = $(element).find("a.product-item__title");
       if (productLink.length) {
         product.name = productLink.text().trim();
         product.churchUrl = "https://upperroom.store" + productLink.attr("href");
       }
 
-      const priceTag = $(element).find("span.ProductItem__Price");
+      const priceTag = $(element).find("span.price");
       if (priceTag.length) {
         product.price = priceTag.text().trim();
       }
 
-      const imgTag = $(element).find("img.ProductItem__Image");
+      const imgTag = $(element).find("img.product-item__image");
       if (imgTag.length) {
-        product.imageUrl = "https:" + imgTag.attr("src");
+        product.imageUrl = imgTag.attr("src")?.startsWith("https:") 
+          ? imgTag.attr("src") 
+          : "https:" + imgTag.attr("src");
       }
 
       product.category = "Upper Room";
