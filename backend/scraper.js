@@ -16,7 +16,7 @@ const scrapeUpperRoom = async () => {
     const $ = cheerio.load(html);
     const products = [];
 
-    $("div.ProductItem").each((index, element) => {
+      $("div.ProductItem").each((_, element) => {
       const product = {};
       
       const productLink = $(element).find("a.ProductItem__Title");
@@ -63,7 +63,7 @@ const scrapeJesusImage = async () => {
     const $ = cheerio.load(html);
     const products = [];
 
-    $("li.grid__item").each((index, element) => {
+    $("li.grid__item").each((_, element) => {
       const product = {};
 
       // Extract product name and link
