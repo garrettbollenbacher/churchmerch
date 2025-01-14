@@ -1,116 +1,576 @@
 [
   {
-    "name": "Christ & Him Crucified Long Sleeve",
-    "link": "https://jesusimage.store/products/christ-him-crucified-ls",
-    "price": "$20.00",
-    "image": "https://jesusimage.store/cdn/shop/files/J22_ChristCrucifiedLuke23BACK_PS-ComfortColors-6014-B4.jpg?v=1712774112&width=533"
+    "name": "MORNING, NOON, & NIGHT BOTTLE",
+    "churchUrl": "https://upperroom.store/products/mnn-bottle",
+    "price": "$22.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/wtaerbottle_essentials_FLAT.png?v=1726077287&width=533",
+    "churchName": "UPPERROOM"
   },
   {
-    "name": "Christ Has Overcome Hoodie",
-    "link": "https://jesusimage.store/products/christ-has-overcome-hoodie",
-    "price": "$65.00",
-    "image": "https://jesusimage.store/cdn/shop/files/Overcome2.png?v=1723493978&width=533"
+    "name": "THE CLASSIC TOTE",
+    "churchUrl": "https://upperroom.store/products/classic-tote",
+    "price": "$36.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/Tote_essentials_FLAT.png?v=1726080970&width=533",
+    "churchName": "UPPERROOM"
+  },
+  {
+    "name": "UNCONSTRUCTED HAT",
+    "churchUrl": "https://upperroom.store/products/unconstructed-hat",
+    "price": "$33.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/UPRMhat_essentials_FLAT.png?v=1726079776&width=533",
+    "churchName": "UPPERROOM"
+  },
+  {
+    "name": "DISTRESSED DAD HAT",
+    "churchUrl": "https://upperroom.store/products/distressed-dad-hat",
+    "price": "$33.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/BlackHat_essentials_FLAT.png?v=1726082024&width=533",
+    "churchName": "UPPERROOM"
+  },
+  {
+    "name": "MORNING, NOON, & NIGHT KIDS TEE",
+    "churchUrl": "https://upperroom.store/products/mnn-kids-tee",
+    "price": "$16.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/MNNKidsTee_essentials_FLAT.png?v=1726079203&width=533",
+    "churchName": "UPPERROOM"
+  },
+  {
+    "name": "UPPERROOM CLASSIC TEE: BLACK",
+    "churchUrl": "https://upperroom.store/products/upperroom-classic-tee-white-copy",
+    "price": "$38.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/BlackEmbroidered_essentials_FLAT.png?v=1726079535&width=533",
+    "churchName": "UPPERROOM"
+  },
+  {
+    "name": "UPPERROOM CLASSIC TEE: WHITE",
+    "churchUrl": "https://upperroom.store/products/box-logo-short-tee-off-white-x-clear-blue",
+    "price": "$38.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/WhiteEmbroidered_essentials_FLAT.png?v=1726079399&width=533",
+    "churchName": "UPPERROOM"
+  },
+  {
+    "name": "MORNING, NOON, & NIGHT CREWNECK",
+    "churchUrl": "https://upperroom.store/products/mnn-crewneck",
+    "price": "$55.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/Crewneck_essentials_FLAT.png?v=1726080132&width=533",
+    "churchName": "UPPERROOM"
+  },
+  {
+    "name": "UPPERROOM HOODIE: BLACK",
+    "churchUrl": "https://upperroom.store/products/upperroom-hoodie-black-2",
+    "price": "$65.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/BlackHoodie_essentials_FLAT.png?v=1726081846&width=533",
+    "churchName": "UPPERROOM"
+  },
+  {
+    "name": "UPPERROOM HOODIE: RED",
+    "churchUrl": "https://upperroom.store/products/upperroom-hoodie",
+    "price": "$65.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/RedHoodie_essentials_FLAT.png?v=1726080735&width=533",
+    "churchName": "UPPERROOM"
+  },
+  {
+    "name": "*UPPERROOM* HOODIE",
+    "churchUrl": "https://upperroom.store/products/upperroom-hoodie-cement",
+    "price": "$65.00 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/Cement_Hoodie_Square.png?v=1731699633&width=533",
+    "churchName": "UPPERROOM"
+  },
+  {
+    "name": "His House, His Presence",
+    "churchUrl": "https://upperroom.store/products/his-house-his-presence",
+    "price": "$19.99 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/HisHouse_HisPresence-front.jpg?v=1690930996&width=533",
+    "churchName": "UPPERROOM"
+  },
+  {
+    "name": "BIG JESUS",
+    "churchUrl": "https://upperroom.store/products/big-jesus",
+    "price": "$17.99 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/BIGJESUS-front.jpg?v=1690930506&width=533",
+    "churchName": "UPPERROOM"
+  },
+  {
+    "name": "Su Casa, Su Presencia",
+    "churchUrl": "https://upperroom.store/products/su-casa-su-presencia",
+    "price": "$19.99 USD",
+    "imageUrl": "https://upperroom.store/cdn/shop/files/IMG_5821.jpg?v=1709852263&width=533",
+    "churchName": "UPPERROOM"
+  },
+  {
+    "name": "Angus Dei Lamb Pin",
+    "churchUrl": "https://jesusimage.store/products/angus-dei-lamb-pin",
+    "price": "$5.00",
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/LambPin.png?v=1723494368&width=533",
+    "churchName": "JESUS IMAGE"
+  },
+  {
+    "name": "Christ & Him Crucified Long Sleeve",
+    "churchUrl": "https://jesusimage.store/products/christ-him-crucified-ls",
+    "price": "$20.00",
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/J22_ChristCrucifiedLuke23BACK_PS-ComfortColors-6014-B4.jpg?v=1712774112&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
     "name": "Christ is Risen Book",
-    "link": "https://jesusimage.store/products/christ-is-risen-book",
+    "churchUrl": "https://jesusimage.store/products/christ-is-risen-book",
     "price": "$15.00",
-    "image": "https://jesusimage.store/cdn/shop/files/ChristisRisen_Front.png?v=1713389927&width=533"
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/ChristisRisen_Front.png?v=1713389927&width=533",
+    "churchName": "JESUS IMAGE"
+  },
+  {
+    "name": "Churches Built Tee",
+    "churchUrl": "https://jesusimage.store/products/churches-built-tee",
+    "price": "$15.00",
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/PC_ChurchesBuiltSimple_ComfortColors1717BlackB1_812de5e0-e05e-4516-ac58-3e4f8e2c757d.png?v=1712776102&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
     "name": "Come Lord Jesus Band Tee",
-    "link": "https://jesusimage.store/products/come-lord-jesus-band-tee",
+    "churchUrl": "https://jesusimage.store/products/come-lord-jesus-band-tee",
     "price": "$35.00",
-    "image": "https://jesusimage.store/cdn/shop/files/J22_CLJBandTeeFRONT_PS-ComfortColors-1717-F1.jpg?v=1712774058&width=533"
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/J22_CLJBandTeeFRONT_PS-ComfortColors-1717-F1.jpg?v=1712774058&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
-    "name": "Cross T-Shirt — Kids",
-    "link": "https://jesusimage.store/products/cross-t-shirt-kids",
-    "price": "$20.00",
-    "image": "https://jesusimage.store/cdn/shop/files/Screen-Shot-2020-02-05-at-1.45.03-PM.webp?v=1712781088&width=533"
-  },
-  {
-    "name": "Crown of Thorns Tee",
-    "link": "https://jesusimage.store/products/crown-of-thorns-tee",
-    "price": "$35.00",
-    "image": "https://jesusimage.store/cdn/shop/files/Crown1.png?v=1723495420&width=533"
+    "name": "Crucified Lamb Tote Bag",
+    "churchUrl": "https://jesusimage.store/products/crucified-lamb-of-godtote-bag",
+    "price": "$15.00",
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/LambofGodCanvasTote.png?v=1724784407&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
     "name": "Everything Hat",
-    "link": "https://jesusimage.store/products/holy-spirit-hat-copy",
+    "churchUrl": "https://jesusimage.store/products/everything-hat",
     "price": "$25.00",
-    "image": "https://jesusimage.store/cdn/shop/files/Everythinghat1.png?v=1723495296&width=533"
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/Everythinghat1.png?v=1723495296&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
     "name": "Fully God Fully Man Tee",
-    "link": "https://jesusimage.store/products/fully-god-fully-man-tee",
+    "churchUrl": "https://jesusimage.store/products/fully-god-fully-man-tee",
     "price": "$35.00",
-    "image": "https://jesusimage.store/cdn/shop/files/FullGodFullyManTee-Front.png?v=1716321073&width=533"
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/FullGodFullyManTee-Front.png?v=1716321073&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
     "name": "Healing Presence Book",
-    "link": "https://jesusimage.store/products/healing-presence-book",
+    "churchUrl": "https://jesusimage.store/products/healing-presence-book",
     "price": "$15.00",
-    "image": "https://jesusimage.store/cdn/shop/files/HealingPresence_Front.png?v=1713389942&width=533"
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/HealingPresence_Front.png?v=1713389942&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
     "name": "Holy Spirit Book",
-    "link": "https://jesusimage.store/products/holy-spirit-book",
+    "churchUrl": "https://jesusimage.store/products/holy-spirit-book",
     "price": "$15.00",
-    "image": "https://jesusimage.store/cdn/shop/files/HS_Front.png?v=1713389954&width=533"
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/HS_Front.png?v=1713389954&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
     "name": "Holy Spirit Hat",
-    "link": "https://jesusimage.store/products/holy-spirit-hat",
+    "churchUrl": "https://jesusimage.store/products/holy-spirit-hat",
     "price": "$25.00",
-    "image": "https://jesusimage.store/cdn/shop/files/HSHat1.png?v=1723494934&width=533"
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/HSHat1.png?v=1723494934&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
     "name": "Jesus 365 Book",
-    "link": "https://jesusimage.store/products/jesus-365-book",
+    "churchUrl": "https://jesusimage.store/products/jesus-365-book",
     "price": "$15.00",
-    "image": "https://jesusimage.store/cdn/shop/files/365_Front.png?v=1713389969&width=533"
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/365_Front.png?v=1713389969&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
     "name": "Jesus Heals All Tee",
-    "link": "https://jesusimage.store/products/jesus-heals-all-tee",
+    "churchUrl": "https://jesusimage.store/products/jesus-heals-all-tee",
     "price": "$35.00",
-    "image": "https://jesusimage.store/cdn/shop/files/HealsAll1.png?v=1723495177&width=533"
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/HealsAll1.png?v=1723495177&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
     "name": "Jesus Image Basics Tee - Patchouli",
-    "link": "https://jesusimage.store/products/jesus-image-basics-tee-patchouli",
+    "churchUrl": "https://jesusimage.store/products/jesus-image-basics-tee-patchouli",
     "price": "$35.00",
-    "image": "https://jesusimage.store/cdn/shop/files/Screenshot2024-09-19at2.29.58PM.png?v=1726770607&width=533"
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/Screenshot2024-09-19at2.29.58PM.png?v=1726770607&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
     "name": "Jesus Image Crewneck",
-    "link": "https://jesusimage.store/products/jesus-image-crewneck",
+    "churchUrl": "https://jesusimage.store/products/jesus-image-crewneck",
     "price": "$50.00",
-    "image": "https://jesusimage.store/cdn/shop/files/JesusImageCrewneck.jpg?v=1716480002&width=533"
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/JesusImageCrewneck.jpg?v=1716480002&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
     "name": "Jesus Image Tee",
-    "link": "https://jesusimage.store/products/jesus-image-tee",
+    "churchUrl": "https://jesusimage.store/products/jesus-image-tee",
     "price": "$35.00",
-    "image": "https://jesusimage.store/cdn/shop/files/JesusImageTee.jpg?v=1716479896&width=533"
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/JesusImageTee.jpg?v=1716479896&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
     "name": "Jesus Image Woven Patch Beanie",
-    "link": "https://jesusimage.store/products/christ-has-overcome-hat-copy",
+    "churchUrl": "https://jesusimage.store/products/christ-has-overcome-hat-copy",
     "price": "$25.00",
-    "image": "https://jesusimage.store/cdn/shop/files/JIFishermenBeanie1.png?v=1723494608&width=533"
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/JIFishermenBeanie1.png?v=1723494608&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
     "name": "Jesus Nights | Dallas, TX | Michael Koulianos",
-    "link": "https://jesusimage.store/products/jesus-nights-dallas",
+    "churchUrl": "https://jesusimage.store/products/jesus-nights-dallas",
     "price": "$0.00",
-    "image": "https://jesusimage.store/cdn/shop/files/JesusNightsDallasImage.jpg?v=1716479500&width=533"
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/JesusNightsDallasImage.jpg?v=1716479500&width=533",
+    "churchName": "JESUS IMAGE"
   },
   {
-    "name": "Jesus People Hoodie",
-    "link": "https://jesusimage.store/products/jesus-people-hoodie",
-    "price": "$65.00",
-    "image": "https://jesusimage.store/cdn/shop/files/JPnew2.png?v=1723494503&width=533"
+    "name": "Jesus People Tee",
+    "churchUrl": "https://jesusimage.store/products/jesus-people-tee",
+    "price": "$35.00",
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/JPBLUE1.png?v=1723494413&width=533",
+    "churchName": "JESUS IMAGE"
+  },
+  {
+    "name": "Jesus School 24-25 Crewneck",
+    "churchUrl": "https://jesusimage.store/products/jesus-school-24-25-crew",
+    "price": "$55.00",
+    "imageUrl": "https://jesusimage.store/cdn/shop/files/JS25CrewFront.png?v=1724772696&width=533",
+    "churchName": "JESUS IMAGE"
+  },
+  {
+    "name": "Trust in God Crewneck",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/trust-in-god-crewneck",
+    "price": "$50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/TrustinGodCrewBack_2.jpg?crop=center&height=1299&v=1704298652&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "EW Raw Edge Flannel",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/ew-raw-edge-flannel",
+    "price": "$40.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/EWFlannelBack.jpg?crop=center&height=1299&v=1706553826&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Jireh Boxy T-Shirt",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/jireh-boxy-t-shirt-1",
+    "price": "$25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/JirehTShirtBack.jpg?crop=center&height=1299&v=1706553901&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Praise Raw Edge Flannel",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/praise-raw-edge-flannel",
+    "price": "$40.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/PraiseFlannelBack.jpg?crop=center&height=2599&v=1706549388&width=2000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "When Wind Meets Fire Hat",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/when-wind-meets-fire-hat",
+    "price": "$25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/DSC8633.jpg?crop=center&height=2251&v=1720751406&width=1732",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "WHEN WIND MEETS FIRE Album Artwork Hoodie",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/when-wind-meets-fire-album-artwork-hoodie",
+    "price": "$50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/WWMF_HOOD_BKcopy.jpg?crop=center&height=1299&v=1720704942&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "WHEN WIND MEETS FIRE Album Artwork T-Shirt",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/when-wind-meets-fire-album-artwork-t-shirt",
+    "price": "$30.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/WWMF_T_BK.jpg?crop=center&height=1299&v=1720443040&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "WHEN WIND MEETS FIRE Tracklist T-Shirt",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/when-wind-meets-fire-tracklist-t-shirt",
+    "price": "$30.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/TRACKLIST_T_BK_2.jpg?crop=center&height=1299&v=1720443425&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Another One T-Shirt",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/another-one-t-shirt",
+    "price": "$30.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/ANOTHERONE_T_BK.jpg?crop=center&height=1299&v=1720443134&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Yahweh We 🤍 You Hoodie",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/yahweh-we-love-you-hoodie",
+    "price": "$50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/YAHWEH_FR_2.jpg?crop=center&height=1299&v=1720704907&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "WHEN WIND MEETS FIRE Tracklist Crewneck",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/when-wind-meets-fire-crewneck",
+    "price": "$50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/WWMF_CREW_FR.jpg?crop=center&height=1299&v=1720443103&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Another One Hat",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/another-one-hat",
+    "price": "$20.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/DSC8618.jpg?crop=center&height=2251&v=1720751358&width=1732",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "EW Soccer Jersey",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/ew-soccer-jersey",
+    "price": "$25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/SoccerJerseyFront.jpg?crop=center&height=1299&v=1707752160&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Praise Patch Hoodie",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/praise-patch-hoodie",
+    "price": "$60.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/PPH.jpg?crop=center&height=2599&v=1730736679&width=2000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Do The New You Hoodie",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/new-you-hoodie",
+    "price": "$50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/NewYouHoodieFront.jpg?crop=center&height=1299&v=1707664308&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "EW Quarter Zip Pullover",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/ew-quarter-zip-pullover-copy",
+    "price": "$50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/FINALFlattenedQtrZip_Front_4298fe9c-8776-4ad2-93dd-3d6fcc5b4ecb.jpg?crop=center&height=1299&v=1718143281&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Kids Praise Patch Hoodie",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/kids-praise-hoodie",
+    "price": "$35.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/KidsPraisePatchHoodieFront.jpg?crop=center&height=1299&v=1706553999&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "EW Corduroy Trucker Hat - Black",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/ew-corduroy-trucker-hat-black",
+    "price": "$25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/DSC0026.jpg?crop=center&height=1299&v=1706549545&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "By Faith I Will Find It Hoodie",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/by-faith-i-will-find-it-hoodie",
+    "price": "$50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/By-Faith-I-Will-Find-It-Hoodie---Back.jpg?crop=center&height=1299&v=1698680094&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Trust In God T-Shirt - Rose",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/trust-in-god-t-shirt-rose",
+    "price": "$30.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/Trust-In-God-T-Shirt---Rose-Front_b35cb811-1197-47ac-854d-24c9d20d52e7.jpg?crop=center&height=1299&v=1695659760&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Blessing Lyrics Crewneck",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/blessing-lyrics-crewneck",
+    "price": "$50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/Blessing-Lyrics-Crewneck-Back.jpg?crop=center&height=1299&v=1695657741&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Be Strong and Do The Work Hoodie",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/be-strong-do-the-work-hoodie",
+    "price": "$25.00 USD\n\n        $50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/BSDTW-Hoodie-Back.jpg?crop=center&height=1299&v=1693513990&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "God of Also T-Shirt",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/god-of-also-t-shirt",
+    "price": "$15.00 USD\n\n        $25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/The-God-of-Also-T-Shirt-Back.jpg?crop=center&height=1299&v=1693513931&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Leviathan Let Me Go Two Tone Hat",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/leviathan-let-me-go-two-tone-hat",
+    "price": "$10.00 USD\n\n        $20.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/LEVIATHAN_HAT_MOCK_ONLINE_BROWN.png?crop=center&height=1299&v=1692133517&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Leviathan Let Me Go T-Shirt",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/leviathan-let-me-go-t-shirt",
+    "price": "$10.00 USD\n\n        $20.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/Leviathan-T-Shirt-Front.jpg?crop=center&height=1299&v=1692142246&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Unseen Sweatshorts",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/unseen-sweatshorts",
+    "price": "$12.00 USD\n\n        $25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/Unseen-Shorts-Front.jpg?crop=center&height=1299&v=1691802402&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Unseen Sweatpants",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/unseen-sweatpants",
+    "price": "$20.00 USD\n\n        $50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/Unseen-Sweatpants.jpg?crop=center&height=1299&v=1691805010&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Eternal Eyes Crop T-Shirt",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/eternal-eyes-crop-t-shirt",
+    "price": "$15.00 USD\n\n        $25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/Eternal-Eyes-Crop-Front.jpg?crop=center&height=1299&v=1691686470&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Eternal Eyes T-Shirt",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/eternal-eyes-t-shirt",
+    "price": "$15.00 USD\n\n        $25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/Eternal-Eyes-T-Shirt-Black-Front.jpg?crop=center&height=1299&v=1691685751&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Fixed Focus T-Shirt",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/fixed-focus-t-shirt",
+    "price": "$15.00 USD\n\n        $25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/Fixed-Focus-T-Shirt-Front.jpg?crop=center&height=1299&v=1691679321&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Heavenly Gaze Hoodie",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/heavenly-gaze-hoodie",
+    "price": "$25.00 USD\n\n        $50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/Heavenly-Gaze-Hoodie-Front.jpg?crop=center&height=1299&v=1691544455&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Reflect Corduroy Hat - Green",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/reflect-corduroy-hat-green",
+    "price": "$25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/DSC9572.jpg?crop=center&height=1299&v=1692037441&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Jireh Zip Up Hoodie",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/jireh-zip-up-hoodie",
+    "price": "$25.00 USD\n\n        $50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/Jireh-Zip-Up-Hoodie-Back_f4f1431d-d6d0-42bf-9d47-c8a6ad2a4adf.jpg?crop=center&height=1299&v=1689193100&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Same God Rock of Ages T-Shirt",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/same-god-rock-of-ages-t-shirt",
+    "price": "$30.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/Same-God-T-Shirt-Back_7550e896-8dbc-47b7-ae43-cb12f04f700d.jpg?crop=center&height=1299&v=1689193397&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Blessing Lyrics T-Shirt",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/blessing-lyrics-t-shirt",
+    "price": "$30.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/Blessing-Lyrics-T-Shirt-Back.jpg?crop=center&height=1299&v=1689192930&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "EW Essential T-Shirt",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/ew-essential-t-shirt",
+    "price": "$10.00 USD\n\n        $25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/EW-Essential-T-Shirt-Back.jpg?crop=center&height=1299&v=1689193037&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Graves Into Gardens Crewneck - Colorful",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/graves-into-gardens-crewneck-colorful",
+    "price": "$40.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/image_1c3a8e1d-1821-4f2c-90a5-b135700c20b9.jpg?crop=center&height=1299&v=1690577647&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Hidden Here T-Shirt",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/hidden-here-t-shirt",
+    "price": "$15.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/Hidden-Here-T-Shirt-Front.jpg?crop=center&height=1299&v=1689800113&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "I'll Be Ready Crewneck",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/ill-be-ready-crewneck",
+    "price": "$25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/I_ll-Be-Ready-Crewneck-Front.jpg?crop=center&height=1299&v=1689800069&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Kids CAN YOU IMAGINE? T-Shirt - Grey",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/kids-can-you-imagine-t-shirt-grey",
+    "price": "$10.00 USD\n\n        $15.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/KIDSGREYTSHIRTFRONT.png?crop=center&height=1299&v=1684451992&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Kids CAN YOU IMAGINE? Crewneck",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/kids-can-you-imagine-crewneck",
+    "price": "$15.00 USD\n\n        $25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/KIDSCREWNECKFRONT.png?crop=center&height=1299&v=1684452299&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Graves Into Gardens T-Shirt - Colorful",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/graves-into-gardens-t-shirt-colorful",
+    "price": "$25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/GIGColorfulBack_49ccbbe2-1f5f-4955-a961-eab102407602.png?crop=center&height=1299&v=1683930001&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "CAN YOU IMAGINE? Crewneck",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/cyi-crewneck",
+    "price": "$25.00 USD\n\n        $50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/20230518_CYI_CrewneckFront.jpg?crop=center&height=1299&v=1684465804&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "CAN YOU IMAGINE? T-Shirt",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/cyi-t-shirt",
+    "price": "$15.00 USD\n\n        $25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/20230518_CYI_TShirt.jpg?crop=center&height=1299&v=1684486012&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "CAN YOU IMAGINE? Album Artwork T-Shirt",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/cyi-album-artwork-t-shirt",
+    "price": "$15.00 USD\n\n        $25.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/20230518_CYI_AlbumArt_TShirt.jpg?crop=center&height=1299&v=1684462860&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "CAN YOU IMAGINE? Tracklist Hoodie",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/cyi-tracklist-hoodie",
+    "price": "$25.00 USD\n\n        $50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/20230518_CYI_RedHoodieFront.jpg?crop=center&height=1299&v=1685556841&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "CAN YOU IMAGINE? Album Artwork Hoodie",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/cyi-album-artwork-hoodie",
+    "price": "$25.00 USD\n\n        $50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/files/20230518_CYI_BlackHoodieFront_1.jpg?crop=center&height=1299&v=1684681470&width=1000",
+    "churchName": "ELEVATION CHURCH"
+  },
+  {
+    "name": "Same God Zip Up Hoodie",
+    "churchUrl": "https://store.elevationchurch.org/collections/apparel/products/same-god-zip-up-hoodie",
+    "price": "$20.00 USD\n\n        $50.00 USD",
+    "imageUrl": "https://store.elevationchurch.org/cdn/shop/products/TourHoodie_Tan_Back_1.jpg?crop=center&height=2906&v=1682859605&width=2236",
+    "churchName": "ELEVATION CHURCH"
   }
 ]

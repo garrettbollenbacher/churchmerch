@@ -9,6 +9,15 @@ export const CategoryTabs: React.FC<CategoryTabsProps> = ({
   selectedCategory,
   onSelectCategory,
 }) => {
+  // Function to format church names
+  const formatChurchName = (name: string) => {
+    return name
+      .toLowerCase()
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+  };
+
   return (
     <div className="flex space-x-4 overflow-x-auto pb-2">
       <button
@@ -31,7 +40,7 @@ export const CategoryTabs: React.FC<CategoryTabsProps> = ({
           }`}
           onClick={() => onSelectCategory(category)}
         >
-          {category.charAt(0).toUpperCase() + category.slice(1)}
+          {formatChurchName(category)}
         </button>
       ))}
     </div>
