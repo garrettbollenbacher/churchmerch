@@ -2,7 +2,54 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const fs = require("fs");
 
-const scrapeMerchandise = async () => {
+const scrapeUpperRoom = async () => {
+  try {
+    const url = "https://upperroom.store/collections/all";
+    const response = await axios.get(url, {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36",
+      },
+    });
+
+    const html = response.data;
+    const $ = cheerio.load(html);
+    const products = [];
+
+    $("div.ProductItem").each((index, element) => {
+      const product = {};
+      
+      const productLink = $(element).find("a.ProductItem__Title");
+      if (productLink.length) {
+        product.name = productLink.text().trim();
+        product.churchUrl = "https://upperroom.store" + productLink.attr("href");
+      }
+
+      const priceTag = $(element).find("span.ProductItem__Price");
+      if (priceTag.length) {
+        product.price = priceTag.text().trim();
+      }
+
+      const imgTag = $(element).find("img.ProductItem__Image");
+      if (imgTag.length) {
+        product.imageUrl = "https:" + imgTag.attr("src");
+      }
+
+      product.category = "Upper Room";
+
+      if (Object.keys(product).length > 0) {
+        products.push(product);
+      }
+    });
+
+    return products;
+  } catch (error) {
+    console.error("Error scraping Upper Room merchandise:", error);
+    return [];
+  }
+};
+
+const scrapeJesusImage = async () => {
   try {
     const url = "https://jesusimage.store/collections/all";
     const response = await axios.get(url, {
@@ -72,4 +119,22 @@ const scrapeMerchandise = async () => {
   }
 };
 
-scrapeMerchandise();
+const scrapeAllStores = async () => {
+  try {
+    const jesusImageProducts = await scrapeJesusImage();
+    const upperRoomProducts = await scrapeUpperRoom();
+    
+    const allProducts = [...jesusImageProducts, ...upperRoomProducts];
+    
+    fs.writeFileSync(
+      "scraped_products.json",
+      JSON.stringify(allProducts, null, 2),
+      "utf-8"
+    );
+    console.log("Scraping completed successfully. Data saved to scraped_products.json");
+  } catch (error) {
+    console.error("Error scraping stores:", error);
+  }
+};
+
+scrapeAllStores();
