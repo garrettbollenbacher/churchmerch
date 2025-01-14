@@ -29,8 +29,8 @@ const scrapeMerchandise = async () => {
           .map((text) => text.trim())
           .filter((text) => text.length > 0);
         product.name = nameText[0];
-        product.link = "https://jesusimage.store" + productLink.attr("href");
-        console.log("Raw Product Name:", productLink.text().trim());
+        product.churchUrl =
+          "https://jesusimage.store" + productLink.attr("href");
       }
 
       // Extract product price
@@ -40,16 +40,18 @@ const scrapeMerchandise = async () => {
       }
 
       // Extract product image
-      // Extract product image
       const imgTag = $(element).find("img");
       if (imgTag.length) {
         if (imgTag.attr("src")) {
-          product.image = "https:" + imgTag.attr("src");
+          product.imageUrl = "https:" + imgTag.attr("src");
         } else if (imgTag.attr("srcset")) {
           const srcset = imgTag.attr("srcset").split(",");
-          product.image = "https:" + srcset[0].split(" ")[0].trim(); // Extract the first URL from srcset
+          product.imageUrl = "https:" + srcset[0].split(" ")[0].trim(); // Extract the first URL from srcset
         }
       }
+
+      // Set default category if not present
+      product.category = product.category || "uncategorized";
 
       if (Object.keys(product).length > 0) {
         products.push(product);
