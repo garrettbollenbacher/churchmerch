@@ -1,0 +1,74 @@
+<div class="card-wrapper product-card-wrapper underline-links-hover">
+    <div class="
+        card card--card
+         card--media
+         color-scheme-4 gradient
+        
+        
+        
+        
+      " style="--ratio-percent: 85.68075117370891%;">
+      <div class="card__inner  ratio" style="--ratio-percent: 85.68075117370891%;"><div class="card__media">
+            <div class="media media--transparent media--hover-effect">
+              
+              <img srcset="//upperroom.store/cdn/shop/files/Cement_Hoodie_Square.png?v=1731699633&amp;width=165 165w,//upperroom.store/cdn/shop/files/Cement_Hoodie_Square.png?v=1731699633&amp;width=360 360w,//upperroom.store/cdn/shop/files/Cement_Hoodie_Square.png?v=1731699633&amp;width=533 533w,//upperroom.store/cdn/shop/files/Cement_Hoodie_Square.png?v=1731699633&amp;width=720 720w,//upperroom.store/cdn/shop/files/Cement_Hoodie_Square.png?v=1731699633 852w
+                " src="//upperroom.store/cdn/shop/files/Cement_Hoodie_Square.png?v=1731699633&amp;width=533" sizes="(min-width: 1600px) 367px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)" alt="*UPPERROOM* HOODIE" class="motion-reduce" loading="lazy" width="852" height="730">
+              
+</div>
+          </div><div class="card__content">
+          <div class="card__information">
+            <h3 class="card__heading">
+              <a href="/products/upperroom-hoodie-cement" id="StandardCardNoMediaLink-template--17000641462433__featured_collection_yrgmhL-7833306529953" class="full-unstyled-link" aria-labelledby="StandardCardNoMediaLink-template--17000641462433__featured_collection_yrgmhL-7833306529953 NoMediaStandardBadge-template--17000641462433__featured_collection_yrgmhL-7833306529953">
+                *UPPERROOM* HOODIE
+              </a>
+            </h3>
+          </div>
+          <div class="card__badge bottom left"><span id="NoMediaStandardBadge-template--17000641462433__featured_collection_yrgmhL-7833306529953" class="badge badge--bottom-left color-scheme-4">Sold out</span></div>
+        </div>
+      </div>
+      <div class="card__content">
+        <div class="card__information">
+          <h3 class="card__heading h5" id="title-template--17000641462433__featured_collection_yrgmhL-7833306529953">
+            <a href="/products/upperroom-hoodie-cement" id="CardLink-template--17000641462433__featured_collection_yrgmhL-7833306529953" class="full-unstyled-link" aria-labelledby="CardLink-template--17000641462433__featured_collection_yrgmhL-7833306529953 Badge-template--17000641462433__featured_collection_yrgmhL-7833306529953">
+              *UPPERROOM* HOODIE
+            </a>
+          </h3>
+          <div class="card-information"><span class="caption-large light"></span>
+<div class="
+    price  price--sold-out">
+  <div class="price__container"><div class="price__regular"><span class="visually-hidden visually-hidden--inline">Regular price</span>
+        <span class="price-item price-item--regular">
+          $65.00 USD
+        </span></div>
+    <div class="price__sale">
+        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+        <span>
+          <s class="price-item price-item--regular">
+            
+              $65.00 USD
+            
+          </s>
+        </span><span class="visually-hidden visually-hidden--inline">Sale price</span>
+      <span class="price-item price-item--sale price-item--last">
+        $65.00 USD
+      </span>
+    </div>
+    <small class="unit-price caption hidden">
+      <span class="visually-hidden">Unit price</span>
+      <span class="price-item price-item--last">
+        <span></span>
+        <span aria-hidden="true">/</span>
+        <span class="visually-hidden">&nbsp;per&nbsp;</span>
+        <span>
+        </span>
+      </span>
+    </small>
+  </div></div>
+
+</div>
+        </div>
+        
+        <div class="card__badge bottom left"><span id="Badge-template--17000641462433__featured_collection_yrgmhL-7833306529953" class="badge badge--bottom-left color-scheme-4">Sold out</span></div>
+      </div>
+    </div>
+  </div>
