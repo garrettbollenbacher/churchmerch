@@ -21,8 +21,9 @@ const scrapeUpperRoom = async () => {
 
       const productLink = $(element).find("h3.card__heading a");
       if (productLink.length) {
-        product.name = productLink.text().trim();
-        product.churchUrl = "https://upperroom.store" + productLink.attr("href");
+        product.name = productLink.text().trim().split("\n")[0]; // Extract only the first line of the name
+        product.churchUrl =
+          "https://upperroom.store" + productLink.attr("href");
       }
 
       const priceTag = $(element).find("span.price-item--regular").first();
@@ -32,12 +33,9 @@ const scrapeUpperRoom = async () => {
 
       const imgTag = $(element).find(".card__media img");
       if (imgTag.length) {
-        product.imageUrl = imgTag.attr("src")?.startsWith("https:") 
-          ? imgTag.attr("src") 
-          : "https:" + imgTag.attr("src");
+        const src = imgTag.attr("src");
+        product.imageUrl = src.startsWith("//") ? "https:" + src : src;
       }
-
-      product.category = "Upper Room";
 
       if (Object.keys(product).length > 0) {
         products.push(product);
@@ -46,7 +44,7 @@ const scrapeUpperRoom = async () => {
 
     return products;
   } catch (error) {
-    console.error("Error scraping Upperroom:", error);
+    console.error("Error during scraping Upper Room:", error);
     return [];
   }
 };
@@ -112,10 +110,12 @@ const scrapeAll = async () => {
 
   const allProducts = [...upperRoomProducts, ...jesusImageProducts];
 
-  fs.writeFileSync("scraped_products.json", `module.exports = ${JSON.stringify(allProducts, null, 2)};`, "utf-8");
-  console.log("Scraping completed. Data saved to scraped_products.js");
+  fs.writeFileSync(
+    "scraped_products.json",
+    JSON.stringify(allProducts, null, 2),
+    "utf-8"
+  );
+  console.log("Scraping completed. Data saved to scraped_products.json");
 };
 
-
 scrapeAll();
-

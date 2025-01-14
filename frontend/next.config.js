@@ -1,7 +1,7 @@
-/** Use CommonJS if "type":"module" is in package.json */
+/** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["jesusimage.store"], // Add the domain of your image URLs
+    domains: ["jesusimage.store", "upperroom.store"], // Add the domain of your image URLs
   },
 };

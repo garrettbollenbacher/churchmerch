@@ -26,9 +26,12 @@ export default function Home() {
     fetchProducts();
   }, []);
 
-  const filteredProducts = products.filter((product) =>
-    product.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  // Ensure products is an array before calling filter
+  const filteredProducts = Array.isArray(products)
+    ? products.filter((product) =>
+        product.name.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    : [];
 
   return (
     <div className="min-h-screen bg-gray-100">
