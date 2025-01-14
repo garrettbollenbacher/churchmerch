@@ -2,6 +2,55 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const fs = require("fs");
 
+const scrapeElevationChurch = async () => {
+  try {
+    const url = "https://store.elevationchurch.org/collections/apparel";
+    const response = await axios.get(url, {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36",
+      },
+    });
+
+    const html = response.data;
+    const $ = cheerio.load(html);
+    const products = [];
+
+    $("div.product-grid-item").each((_, element) => {
+      const product = {};
+
+      const productLink = $(element).find("a.product-grid-item__title");
+      if (productLink.length) {
+        product.name = productLink.text().trim();
+        product.churchUrl = url + productLink.attr("href");
+      }
+
+      const priceTag = $(element).find("a.product-grid-item__price");
+      if (priceTag.length) {
+        product.price = priceTag.text().trim();
+      }
+
+      const imgTag = $(element).find(".product-grid-item__image img");
+      if (imgTag.length) {
+        product.imageUrl = imgTag.attr("src")?.startsWith("//")
+          ? "https:" + imgTag.attr("src")
+          : imgTag.attr("src");
+      }
+
+      product.category = "Elevation Church";
+
+      if (Object.keys(product).length > 0) {
+        products.push(product);
+      }
+    });
+
+    return products;
+  } catch (error) {
+    console.error("Error scraping Elevation Church:", error);
+    return [];
+  }
+};
+
 const scrapeUpperRoom = async () => {
   try {
     const url = "https://upperroom.store/collections/all";
@@ -107,12 +156,17 @@ const scrapeJesusImage = async () => {
 const scrapeAll = async () => {
   const upperRoomProducts = await scrapeUpperRoom();
   const jesusImageProducts = await scrapeJesusImage();
+  const elevationChurchProducts = await scrapeElevationChurch();
 
-  const allProducts = [...upperRoomProducts, ...jesusImageProducts];
+  const allProducts = [
+    ...upperRoomProducts,
+    ...jesusImageProducts,
+    ...elevationChurchProducts,
+  ];
 
   fs.writeFileSync(
     "scraped_products.json",
-    JSON.stringify(allProducts, null, 2),
+    JSON.stringify(allProducts, null, 3),
     "utf-8"
   );
   console.log("Scraping completed. Data saved to scraped_products.json");
