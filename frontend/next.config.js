@@ -10,5 +10,5 @@ module.exports = {
     ],
     unoptimized: true
   },
-  output: 'standalone'
+  output: 'export'
 };
