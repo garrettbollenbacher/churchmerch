@@ -1,0 +1,205 @@
+ - include was updated to add 'dist/types/**/*.ts'
+
+ ✓ Ready in 14.5s
+ ○ Compiling / ...
+ ⨯ src/app/layout.tsx
+An error occurred in `next/font`.
+
+Error: Cannot find module 'picocolors'
+Require stack:
+- /home/runner/workspace/node_modules/postcss/lib/css-syntax-error.js
+- /home/runner/workspace/node_modules/postcss/lib/postcss.js
+- /home/runner/workspace/node_modules/next/dist/build/webpack/loaders/next-font-loader/postcss-next-font.js
+- /home/runner/workspace/node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js
+- /home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js
+- /home/runner/workspace/node_modules/next/dist/compiled/webpack/webpack.js
+- /home/runner/workspace/node_modules/next/dist/server/config-utils.js
+- /home/runner/workspace/node_modules/next/dist/server/config.js
+- /home/runner/workspace/node_modules/next/dist/server/next.js
+- /home/runner/workspace/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at /home/runner/workspace/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at mod.require (/home/runner/workspace/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/runner/workspace/node_modules/postcss/lib/css-syntax-error.js:3:12)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at mod.require (/home/runner/workspace/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/runner/workspace/node_modules/postcss/lib/postcss.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at mod.require (/home/runner/workspace/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/runner/workspace/node_modules/next/dist/build/webpack/loaders/next-font-loader/postcss-next-font.js:11:57)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at mod.require (/home/runner/workspace/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/runner/workspace/node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js:14:65)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at mod.require (/home/runner/workspace/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at loadLoader (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:716)
+    at iteratePitchingLoaders (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4794)
+    at iteratePitchingLoaders (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4764)
+    at /home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4896
+    at handleResult (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:1424)
+    at loadLoader (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:963)
+    at iteratePitchingLoaders (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4794)
+    at runLoaders (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:8590)
+    at NormalModule._doBuild (/home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js:28:406722)
+    at NormalModule.build (/home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js:28:408735)
+    at /home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js:28:82434
+    at NormalModule.needBuild (/home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js:28:412676)
+ ⨯ src/app/layout.tsx
+An error occurred in `next/font`.
+
+Error: Cannot find module 'picocolors'
+Require stack:
+- /home/runner/workspace/node_modules/postcss/lib/css-syntax-error.js
+- /home/runner/workspace/node_modules/postcss/lib/postcss.js
+- /home/runner/workspace/node_modules/next/dist/build/webpack/loaders/next-font-loader/postcss-next-font.js
+- /home/runner/workspace/node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js
+- /home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js
+- /home/runner/workspace/node_modules/next/dist/compiled/webpack/webpack.js
+- /home/runner/workspace/node_modules/next/dist/server/config-utils.js
+- /home/runner/workspace/node_modules/next/dist/server/config.js
+- /home/runner/workspace/node_modules/next/dist/server/next.js
+- /home/runner/workspace/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at /home/runner/workspace/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at mod.require (/home/runner/workspace/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/runner/workspace/node_modules/postcss/lib/css-syntax-error.js:3:12)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at mod.require (/home/runner/workspace/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/runner/workspace/node_modules/postcss/lib/postcss.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at mod.require (/home/runner/workspace/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/runner/workspace/node_modules/next/dist/build/webpack/loaders/next-font-loader/postcss-next-font.js:11:57)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at mod.require (/home/runner/workspace/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/runner/workspace/node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js:14:65)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at mod.require (/home/runner/workspace/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at loadLoader (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:716)
+    at iteratePitchingLoaders (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4794)
+    at iteratePitchingLoaders (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4764)
+    at /home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4896
+    at handleResult (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:1424)
+    at loadLoader (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:963)
+    at iteratePitchingLoaders (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4794)
+    at runLoaders (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:8590)
+    at NormalModule._doBuild (/home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js:28:406722)
+    at NormalModule.build (/home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js:28:408735)
+    at /home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js:28:82434
+    at NormalModule.needBuild (/home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js:28:412710)
+ ⨯ src/app/layout.tsx
+An error occurred in `next/font`.
+
+Error: Cannot find module 'picocolors'
+Require stack:
+- /home/runner/workspace/node_modules/postcss/lib/css-syntax-error.js
+- /home/runner/workspace/node_modules/postcss/lib/postcss.js
+- /home/runner/workspace/node_modules/next/dist/build/webpack/loaders/next-font-loader/postcss-next-font.js
+- /home/runner/workspace/node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js
+- /home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js
+- /home/runner/workspace/node_modules/next/dist/compiled/webpack/webpack.js
+- /home/runner/workspace/node_modules/next/dist/server/config-utils.js
+- /home/runner/workspace/node_modules/next/dist/server/config.js
+- /home/runner/workspace/node_modules/next/dist/server/next.js
+- /home/runner/workspace/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at /home/runner/workspace/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at mod.require (/home/runner/workspace/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/runner/workspace/node_modules/postcss/lib/css-syntax-error.js:3:12)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at mod.require (/home/runner/workspace/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/runner/workspace/node_modules/postcss/lib/postcss.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at mod.require (/home/runner/workspace/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/runner/workspace/node_modules/next/dist/build/webpack/loaders/next-font-loader/postcss-next-font.js:11:57)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at mod.require (/home/runner/workspace/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/runner/workspace/node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js:14:65)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at mod.require (/home/runner/workspace/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at loadLoader (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:716)
+    at iteratePitchingLoaders (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4794)
+    at iteratePitchingLoaders (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4764)
+    at /home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4896
+    at handleResult (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:1424)
+    at loadLoader (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:963)
+    at iteratePitchingLoaders (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4794)
+    at runLoaders (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:8590)
+    at NormalModule._doBuild (/home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js:28:406722)
+    at NormalModule.build (/home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js:28:408735)
+    at /home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js:28:82434
+    at NormalModule.needBuild (/home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js:28:412710)
+ GET / 500 in 15364ms
+ GET / 500 in 15361ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/runner/workspace/frontend/dist/cache/webpack/client-development-fallback/0.pack.gz_' -> '/home/runner/workspace/frontend/dist/cache/webpack/client-development-fallback/0.pack.gz'
