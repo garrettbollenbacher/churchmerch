@@ -15,9 +15,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             <Image
               src={product.imageUrl}
               alt={product.name}
-              layout="fill"
-              objectFit="cover"
-              className="group-hover:scale-105 transition-transform duration-300"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              priority
+              className="object-cover group-hover:scale-105 transition-transform duration-300"
             />
           </div>
           <div className="p-4">
@@ -41,9 +42,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <Image
           src={product.imageUrl}
           alt={product.name}
-          layout="fill"
-          objectFit="cover"
-          className="group-hover:scale-105 transition-transform duration-300"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority
+          className="object-cover group-hover:scale-105 transition-transform duration-300"
         />
       </div>
       <div className="p-4">
