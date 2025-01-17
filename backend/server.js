@@ -1,16 +1,19 @@
+
 const express = require("express");
-const fs = require("fs");
 const path = require("path");
+const fs = require("fs");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 const cors = require("cors");
 app.use(cors());
-app.use(express.static(path.join(__dirname, '../frontend/dist')));
-app.use(express.static(path.join(__dirname, '../frontend/.next')));
 
-// Endpoint to serve the scraped products
+// Serve static files from the Next.js build
+app.use('/_next', express.static(path.join(__dirname, '../frontend/.next')));
+app.use(express.static(path.join(__dirname, '../frontend/public')));
+
+// API endpoint for products
 app.get("/api/products", (req, res) => {
   fs.readFile(
     path.join(__dirname, "scraped_products.json"),
@@ -26,7 +29,11 @@ app.get("/api/products", (req, res) => {
   );
 });
 
-// Start the server
+// Handle all other routes by serving the Next.js app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/.next/server/pages/index.html'));
+});
+
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server is running on http://0.0.0.0:${PORT}`);
 });
