@@ -8,15 +8,31 @@ const cors = require("cors");
 app.use(cors());
 
 // Serve static files from the frontend build directory
-app.use(express.static(path.join(__dirname, '../frontend/.next')));
-app.use(express.static(path.join(__dirname, '../frontend')));
+app.use('/_next', express.static(path.join(__dirname, '../frontend/.next')));
+app.use(express.static(path.join(__dirname, '../frontend/public')));
 
-// Handle requests to the root URL and client-side routing
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/.next/server/pages/index.html'));
+// API endpoint for products should come before the catch-all route
+app.get("/api/products", (req, res) => {
+  fs.readFile(
+    path.join(__dirname, "scraped_products.json"),
+    "utf8",
+    (err, data) => {
+      if (err) {
+        res.status(500).json({ error: "Unable to read product data" });
+      } else {
+        const products = JSON.parse(data);
+        res.json(products);
+      }
+    }
+  );
 });
 
-// Endpoint to serve the scraped products
+// Handle all other routes
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/.next/server/app/index.html'));
+});
+
+// Remove duplicate products endpoint
 app.get("/api/products", (req, res) => {
   fs.readFile(
     path.join(__dirname, "scraped_products.json"),
