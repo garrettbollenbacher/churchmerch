@@ -12,6 +12,7 @@ app.use(cors());
 // Serve static files from the Next.js build
 app.use('/_next', express.static(path.join(__dirname, '../frontend/.next')));
 app.use(express.static(path.join(__dirname, '../frontend/public')));
+app.use(express.static(path.join(__dirname, '../frontend/.next/static')));
 
 // API endpoint for products
 app.get("/api/products", (req, res) => {
@@ -31,7 +32,7 @@ app.get("/api/products", (req, res) => {
 
 // Handle all other routes by serving the Next.js app
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/.next/server/pages/index.html'));
+  res.sendFile(path.join(__dirname, '../frontend/.next/server/app/page.html'));
 });
 
 app.listen(PORT, '0.0.0.0', () => {

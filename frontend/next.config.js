@@ -9,5 +9,6 @@ module.exports = {
       "store.elevationchurch.org",
     ],
     unoptimized: true
-  }
+  },
+  output: 'standalone'
 };
