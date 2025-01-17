@@ -1,13 +1,14 @@
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
+module.exports = {
+  reactStrictMode: true,
   images: {
-    unoptimized: true,
+    domains: [
+      "jesusimage.store",
+      "upperroom.store",
+      "store.elevationchurch.org",
+    ],
   },
-  typescript: {
-    ignoreBuildErrors: true,
-  }
-}
-
-module.exports = nextConfig
+  output: 'export',
+  distDir: 'dist'
+};
