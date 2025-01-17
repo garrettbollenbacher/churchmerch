@@ -1,0 +1,4 @@
+[deployment]
+build = ["sh", "-c", "npm run build"]
+run = ["sh", "-c", "npx serve dist"]
+deploymentTarget = "cloudrun"
