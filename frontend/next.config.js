@@ -8,6 +8,21 @@ module.exports = {
       "upperroom.store",
       "store.elevationchurch.org",
     ],
+    unoptimized: false,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.jesusimage.store'
+      },
+      {
+        protocol: 'https',
+        hostname: '**.upperroom.store'
+      },
+      {
+        protocol: 'https',
+        hostname: '**.elevationchurch.org'
+      }
+    ]
   },
   output: 'export',
   distDir: 'dist'
