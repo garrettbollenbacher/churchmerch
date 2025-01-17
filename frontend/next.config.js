@@ -8,7 +8,6 @@ module.exports = {
       "upperroom.store",
       "store.elevationchurch.org",
     ],
-  },
-  output: 'export',
-  distDir: 'dist'
+    unoptimized: true
+  }
 };
