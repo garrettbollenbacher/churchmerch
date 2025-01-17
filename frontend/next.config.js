@@ -8,7 +8,7 @@ module.exports = {
       "upperroom.store",
       "store.elevationchurch.org",
     ],
-    unoptimized: false,
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
