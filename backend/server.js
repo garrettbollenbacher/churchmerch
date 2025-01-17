@@ -3,10 +3,11 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 3000;
 
 const cors = require("cors");
 app.use(cors());
+app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
 // Endpoint to serve the scraped products
 app.get("/api/products", (req, res) => {

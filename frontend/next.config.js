@@ -1,3 +1,4 @@
+
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
@@ -6,6 +7,8 @@ module.exports = {
       "jesusimage.store",
       "upperroom.store",
       "store.elevationchurch.org",
-    ], // Add the domain of your image URLs
+    ],
   },
+  output: 'export',
+  distDir: 'dist'
 };
