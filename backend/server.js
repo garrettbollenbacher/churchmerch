@@ -10,8 +10,9 @@ app.use(cors());
 // Serve static files from the frontend build directory
 app.use('/_next', express.static(path.join(__dirname, '../frontend/.next')));
 app.use(express.static(path.join(__dirname, '../frontend/public')));
+app.use(express.static(path.join(__dirname, '../frontend/.next/static')));
 
-// API endpoint for products should come before the catch-all route
+// API endpoint for products
 app.get("/api/products", (req, res) => {
   fs.readFile(
     path.join(__dirname, "scraped_products.json"),
@@ -27,9 +28,9 @@ app.get("/api/products", (req, res) => {
   );
 });
 
-// Handle all other routes
+// Handle all other routes by serving the app
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/.next/server/app/index.html'));
+  res.sendFile(path.join(__dirname, '../frontend/.next/server/app/page.html'));
 });
 
 // Remove duplicate products endpoint
