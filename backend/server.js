@@ -8,19 +8,13 @@ const cors = require("cors");
 app.use(cors());
 
 // Serve static files from the frontend build directory
-app.use(express.static(path.join(__dirname, '../frontend/dist')));
-
-// Handle requests to the root URL
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
-});
-
-// Handle all other routes for client-side routing
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
-});
-
 app.use(express.static(path.join(__dirname, '../frontend/.next')));
+app.use(express.static(path.join(__dirname, '../frontend')));
+
+// Handle requests to the root URL and client-side routing
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/.next/server/pages/index.html'));
+});
 
 // Endpoint to serve the scraped products
 app.get("/api/products", (req, res) => {

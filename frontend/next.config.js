@@ -14,9 +14,7 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    appDir: true,
-  },
+  output: 'standalone',
   typescript: {
     ignoreBuildErrors: true,
   }
