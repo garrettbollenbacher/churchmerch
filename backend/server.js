@@ -1,16 +1,39 @@
 const express = require("express");
-const fs = require("fs");
 const path = require("path");
-
+const fs = require("fs");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 const cors = require("cors");
 app.use(cors());
-app.use(express.static(path.join(__dirname, '../frontend/dist')));
-app.use(express.static(path.join(__dirname, '../frontend/.next')));
 
-// Endpoint to serve the scraped products
+// Serve static files from the frontend build directory
+app.use('/_next', express.static(path.join(__dirname, '../frontend/.next')));
+app.use(express.static(path.join(__dirname, '../frontend/public')));
+app.use(express.static(path.join(__dirname, '../frontend/.next/static')));
+
+// API endpoint for products
+app.get("/api/products", (req, res) => {
+  fs.readFile(
+    path.join(__dirname, "scraped_products.json"),
+    "utf8",
+    (err, data) => {
+      if (err) {
+        res.status(500).json({ error: "Unable to read product data" });
+      } else {
+        const products = JSON.parse(data);
+        res.json(products);
+      }
+    }
+  );
+});
+
+// Handle all other routes by serving the app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/.next/server/app/page.html'));
+});
+
+// Remove duplicate products endpoint
 app.get("/api/products", (req, res) => {
   fs.readFile(
     path.join(__dirname, "scraped_products.json"),

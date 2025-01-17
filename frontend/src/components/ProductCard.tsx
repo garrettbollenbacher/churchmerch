@@ -12,10 +12,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <a target="_blank" rel="noopener noreferrer">
         <div className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 w-full h-full">
           <div className="relative w-full h-64">
-            <img
+            <Image
               src={product.imageUrl}
               alt={product.name}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              priority
+              className="object-cover group-hover:scale-105 transition-transform duration-300"
             />
           </div>
           <div className="p-4">
@@ -39,9 +42,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <Image
           src={product.imageUrl}
           alt={product.name}
-          layout="fill"
-          objectFit="cover"
-          className="group-hover:scale-105 transition-transform duration-300"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority
+          className="object-cover group-hover:scale-105 transition-transform duration-300"
         />
       </div>
       <div className="p-4">

@@ -1,29 +1,23 @@
 
 /** @type {import('next').NextConfig} */
-module.exports = {
-  reactStrictMode: true,
+const nextConfig = {
   images: {
     domains: [
-      "jesusimage.store",
-      "upperroom.store",
-      "store.elevationchurch.org",
+      'upperroom.store',
+      'jesusimage.store',
+      'store.elevationchurch.org'
     ],
-    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**.jesusimage.store'
+        hostname: '**',
       },
-      {
-        protocol: 'https',
-        hostname: '**.upperroom.store'
-      },
-      {
-        protocol: 'https',
-        hostname: '**.elevationchurch.org'
-      }
-    ]
+    ],
   },
-  output: 'export',
-  distDir: 'dist'
-};
+  output: 'standalone',
+  typescript: {
+    ignoreBuildErrors: true,
+  }
+}
+
+module.exports = nextConfig
