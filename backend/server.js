@@ -1,13 +1,23 @@
 const express = require("express");
-const fs = require("fs");
-const path = require("path");
-
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 const cors = require("cors");
 app.use(cors());
+
+// Serve static files from the frontend build directory
 app.use(express.static(path.join(__dirname, '../frontend/dist')));
+
+// Handle requests to the root URL
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
+});
+
+// Handle all other routes for client-side routing
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
+});
+
 app.use(express.static(path.join(__dirname, '../frontend/.next')));
 
 // Endpoint to serve the scraped products
