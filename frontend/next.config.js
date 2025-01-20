@@ -1,14 +1,9 @@
 
 /** @type {import('next').NextConfig} */
 module.exports = {
-  reactStrictMode: true,
-  images: {
-    domains: [
-      "jesusimage.store",
-      "upperroom.store",
-      "store.elevationchurch.org",
-    ],
-  },
   output: 'export',
+  images: {
+    unoptimized: true
+  },
   distDir: 'dist'
 };
