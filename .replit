@@ -8,5 +8,9 @@ deploymentTarget = "cloudrun"
 build = ["sh", "-c", "cd frontend && npm install && npm run build"]
 
 [[ports]]
+localPort = 3000
+externalPort = 8080
+
+[[ports]]
 localPort = 5000
 externalPort = 80
